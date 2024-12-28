@@ -1,0 +1,44 @@
+.board-column {
+    min-height: 600px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.task-card {
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: move;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.task-actions {
+    display: none;
+}
+
+.task-card:hover .task-actions {
+    display: block;
+}
+
+.column-header {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.drop-zone {
+    border: 2px dashed #ccc;
+}
